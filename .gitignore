@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.git
+!resume.cls
+!resume.tex
+!resume.pdf

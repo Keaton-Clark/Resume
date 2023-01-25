@@ -1,0 +1,167 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{hyperref}
+
+\usepackage[left=0.4 in,top=0.4in,right=0.6 in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Keaton Clark} % Your name
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{ \href{mailto:keatonclark2@gmail.com}{keatonclark2@gmail.com} \\ \href{https://github.com/Keaton-Clark}{github.com/Keaton-Clark} }  % Your phone number and email
+
+\begin{document}
+\newif\ifall
+%\alltrue
+\ifall
+\long\def\/*#1*/{#1}
+\else
+\long\def\/*#1*/{}
+\fi
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION 
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\begin{rSubsection}{Bachelor of Science in Computer Science and Engineering}{08/20 - 05/24}{University of Nevada, Reno}{GPA : 3.6}
+		
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS 
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{TOOLS}
+
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+		Languages 			&	C {$\cdot$} C++ {$\cdot$} Rust {$\cdot$} JavaScript {$\cdot$} Python {$\cdot$} Bash {$\cdot$} Cuda {$\cdot$} VHDL \\
+		Embedded Platforms 	& 	ARM {$\cdot$} RISC-V {$\cdot$} AVR \\
+		Software 			&	KiCad {$\cdot$} Unity {$\cdot$} Solidworks {$\cdot$} LaTeX\\
+
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{WORK EXPERIENCE}
+
+	\begin{rSubsection}{Finsure}{07/21 - 10/21}{Full Stack Intern}{Remote}
+		\item Proposed an approach to increase web traffic and provide a profitable service to the Insuretech 
+		ecosystem as well as architecting from scratch the website and this webservice
+		\item Composed over 200 webscraping scripts as well as the database needed to store and access the 100,000 data entries neccesary for this devolopment
+		\item Advertised the project and the progress made to ITC Vegas, the largest conference of insurance leaders and innovators at over 30,000 attendees
+	\end{rSubsection}
+
+	\begin{rSubsection}{Send Cut Send}{07/21 - 10/21}{Junior Programmer}{Reno, NV}
+		\/*
+		\item Nested 160 parts per day on sheets of metal in a space-conscious manner with SigmaNest for CNC machines,
+		including laser cutters
+		\item Produced a technical report on workstation computers to expedite workplace processes
+		\item Coordinated remakes for approximately 10 incorrectly cut and damaged parts per shift
+		*/
+	\end{rSubsection}
+
+	\/*
+	\begin{rSubsection}{B \& J Inc.}{04/2020 - 05/21}{Welder}{Reno, NV}
+		\item Operated and programmed a welding robot for up to 10-hour shifts
+		\item Performed gas tungsten arc welding and gas metal arc welding for projects that ranged from fitness equipment to surgery tables, delivering up to 150 parts per day
+		\item Corresponded with and supported 4 other divisions of the shop, exhibiting flexibility
+	\end{rSubsection}
+	*/
+
+	\begin{rSubsection}{Juicy's Giant Hamburgers}{10/17 - 07/21}{Assistant Manager}{Reno, NV}
+		\/*
+		\item Supervised 5 other employees, delegated tasks, organized work efforts, conducted interviews, calculated and
+		appraised daily sales, trained new hires, and implemented opening and closing processes
+		\item Facilitated and monitored food quality, health safety, and cleanliness for 150+ customers per day
+		\item Audited and accounted for approximately \$4000 in sales per day
+		*/
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECT EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECT EXPERIENCE}
+
+	\begin{rSubsection}{Dove - Embedded Systems Project}{ARM, Python}{}{}
+		\item Designed a 32x64 led matrix clock for a personal project
+		\item Leveraged free data bases as well as synchronous remote requests to display 366 unique graphics
+		\item Adapted several libraries in order to increase operating speed and reduce flicker on the display
+	\end{rSubsection}
+
+	\begin{rSubsection}{PlaceR - Virtual Reality Data Visualizer}{C\#, Unity, Python, Pandas}{}{}
+		\item Processed and manipulated 1 billion data points from the Reddit social experiment known as r/place and displayed
+		these data points in a visually appealing manner with a virtual reality experience
+		\item Leveraged Unity to create a heat map as an overlay of the r/place grid, where users could click through the 
+		experience to view the highest and lowest areas of activity as Reddit users edited pixels throughout the 5-day event
+		\item Developed within a 24-hour time frame and won 1st place overall in the 2022 Reno ACM Hackathon
+	\end{rSubsection}
+
+	\begin{rSubsection}{Swamp Cooler - Embedded Systems Project}{C, AVR, PCB Design}{}{}
+
+	\end{rSubsection}
+
+	\begin{rSubsection}{NNCUDA - Neural Networks Library}{C++, Cuda, Convolutional Neural Networks}{}{}
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{RELEVANT EXPERIENCE}
+
+
+	\begin{rSubsection}{JPMorgan Chase \& Co.}{04/22}{Forage: Agile Experience Program Participant}{Virtual}
+		\/*
+		\item Conceptualized 8 user stories, based on a hypothetical scenario of a college student’s financial needs
+		\item Prioritized the 8 user stories in order of easiest to achieve, using Trello and leveraging the Fibonacci sequence
+		\item Identified the 4 general phases of a Scrum sprint cycle and categorized the importance of each role and process
+		*/
+	\end{rSubsection}
+
+	\begin{rSubsection}{Lyft}{04/22}{Forage: Back-end Engineering Virtual Experience Program Participant}{Virtual}
+		\/*
+		\item Created a UML diagram to visualize 7 interconnected elements of the software
+		\item Refactored the existing code base to to reflect the design shown in the UML diagram
+		\item Architected 10 unit tests for the software and implemented 3 additional features to demonstrate a flexible codebase
+		*/
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\/*
+\begin{rSection}{Achievements}
+	{Reno ACM Hackathon,2022: 1st place overall}
+\end{rSection}
+*/
+
+%----------------------------------------------------------------------------------------
+%	EXTRA CURRICULARS
+%----------------------------------------------------------------------------------------
+
+\/*
+\begin{rSection}{Extra Curriculars}
+	{Member, Association for Computing Machinery, Reno: 2022 - present}\\
+	{Member, American Institute of Chemical Engineers, Reno: 2023 - present}\\
+	{Volunteer, Ski Tavern Junior Ski Program, Reno: 2015 - 2020}\\
+\end{rSection}
+*/
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
